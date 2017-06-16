@@ -11,9 +11,9 @@ class summon:
     async def summon(self,channel):
         """This does stuff!"""
 
-        #Your code will go here
+        #simple command
         self.bot.join_voice_channel(channel)
-        await self.bot.say("I can do stuff!")
+        await self.bot.say("channel joined !")
 
 def setup(bot):
     bot.add_cog(summon(bot))
