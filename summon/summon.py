@@ -8,11 +8,12 @@ class summon:
         self.bot = bot
 
     @commands.command()
-    async def summon(self,channel):
+    async def summon(self,voice_channel):
         """This does stuff!"""
 
         #simple command
-        self.bot.join_voice_channel(channel)
+        self.bot.join_voice_channel(voice_channel)
+        self.move_voice_client(voice_channel)
         await self.bot.say("channel joined !")
 
 def setup(bot):
